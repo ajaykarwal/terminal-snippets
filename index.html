@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Terminal Snippets by ajaykarwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Terminal Snippets</h1>
+      <h2 class="project-tagline">A collection of Mac OS X terminal snippets </h2>
+      <a href="https://github.com/ajaykarwal/terminal-snippets" class="btn">View on GitHub</a>
+      <a href="https://github.com/ajaykarwal/terminal-snippets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ajaykarwal/terminal-snippets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="terminal-snippets" class="anchor" href="#terminal-snippets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Terminal Snippets</h1>
+
+<p>A collection of Mac OS X terminal snippets. I plan to better organise these as the list grows.</p>
+
+<p>Please feel free to contribute.</p>
+
+<hr>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<h3>
+<a id="change-the-default-destination-folder-for-saving-screenshots" class="anchor" href="#change-the-default-destination-folder-for-saving-screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change the default destination folder for saving screenshots</h3>
+
+<p>By default screenshots are saved to the desktop which can cause a lot of clutter throught the day. Use this snippet to save to a folder of your choice.</p>
+
+<pre><code>defaults write com.apple.screencapture location ~/Pictures/Screenshots
+killall SystemUIServer
+</code></pre>
+
+<h3>
+<a id="disable-screenshot-drop-shadows" class="anchor" href="#disable-screenshot-drop-shadows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disable Screenshot Drop Shadows</h3>
+
+<p>When you take a screenshot of a window in OS X, by default it will always show a drop shadow, adding wasted pixels. Use this command to remove it. Change <code>TRUE</code> to <code>FALSE</code> to switch the shadow back on.</p>
+
+<pre><code>defaults write com.apple.screencapture disable-shadow -bool TRUE
+killall SystemUIServer
+</code></pre>
+
+<h3>
+<a id="change-the-screenshot-file-format" class="anchor" href="#change-the-screenshot-file-format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change the screenshot file format</h3>
+
+<p>By default, screenshots are saved as PNG which can be quite large files. If drop-shadows are kept on, I recommend keeping them as PNG to enable the transparency of the drop shadow but if you want to change to any other format use this command.</p>
+
+<p>Supported formats are PNG, PDF, GIF, TIFF, and JPG.</p>
+
+<pre><code>defaults write com.apple.screencapture type JPG
+killall SystemUIServer
+</code></pre>
+
+<h2>
+<a id="finderapp-hacks" class="anchor" href="#finderapp-hacks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Finder.app hacks</h2>
+
+<h3>
+<a id="open-a-finder-window-at-current-location" class="anchor" href="#open-a-finder-window-at-current-location" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Open a Finder window at current location</h3>
+
+<pre><code>open .
+</code></pre>
+
+<h3>
+<a id="showhide-hidden-files" class="anchor" href="#showhide-hidden-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Show/Hide hidden files</h3>
+
+<p>Show</p>
+
+<pre><code>defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+</code></pre>
+
+<p>Hide</p>
+
+<pre><code>defaults write com.apple.finder AppleShowAllFiles NO
+killall Finder
+</code></pre>
+
+<h2>
+<a id="just-for-fun" class="anchor" href="#just-for-fun" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Just for fun</h2>
+
+<h3>
+<a id="make-your-mac-talk" class="anchor" href="#make-your-mac-talk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Make your Mac talk</h3>
+
+<pre><code>say "This Mac runs OS X, not OS ex"
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ajaykarwal/terminal-snippets">Terminal Snippets</a> is maintained by <a href="https://github.com/ajaykarwal">ajaykarwal</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
