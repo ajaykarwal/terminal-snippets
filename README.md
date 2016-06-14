@@ -55,6 +55,12 @@ killall Finder
 ```
 
 
+### Delete '.DS_Store' files from a directory
+```
+cd <path/to/directory>
+find . -name '*.DS_Store' -type f -delete
+```
+
 
 
 
