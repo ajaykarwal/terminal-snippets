@@ -6,7 +6,7 @@ A collection of Mac OS X terminal snippets. I plan to better organise these as t
 Please feel free to contribute.
 
 ---
-
+[TOC]
 
 ## Screenshots
 ### Change the default destination folder for saving screenshots
@@ -33,8 +33,8 @@ killall SystemUIServer
 
 
 
-
-
+<br>
+<br>
 ## Finder.app hacks
 ### Open a Finder window at current location
 ```
@@ -62,8 +62,8 @@ find . -name '*.DS_Store' -type f -delete
 ```
 
 
-
-
+<br>
+<br>
 ## Just for fun
 ### Make your Mac talk
 ```
