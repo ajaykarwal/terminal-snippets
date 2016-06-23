@@ -10,7 +10,7 @@ Please feel free to contribute.
 
 1. [Screenshots](#secreenshots)
 2. [Finder hacks](#finder-hacks)
-3. [Dock hacks](#tdock-hacks)
+3. [Dock hacks](#dock-hacks)
 4. [Just for fun](#just-for-fun)
 
 
