@@ -8,6 +8,14 @@ Please feel free to contribute.
 ---
 
 
+1. [Screenshots](#secreenshots)
+2. [Finder hacks](#finder-hacks)
+3. [Dock hacks](#tdock-hacks)
+4. [Just for fun](#just-for-fun)
+
+
+
+
 ## Screenshots
 ### Change the default destination folder for saving screenshots
 By default screenshots are saved to the desktop which can cause a lot of clutter throught the day. Use this snippet to save to a folder of your choice.
@@ -33,9 +41,9 @@ killall SystemUIServer
 
 
 
-<br>
-<br>
-## Finder.app hacks
+
+
+## Finder hacks
 ### Open a Finder window at current location
 ```
 open .
@@ -62,8 +70,32 @@ find . -name '*.DS_Store' -type f -delete
 ```
 
 
-<br>
-<br>
+
+
+
+## Dock hacks
+### Add a "space" to the dock. Enter it as many times as you want spaces.
+
+```
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+killall Dock
+```
+This will add a blank space to the end of the Dock. Move it to the desired position to create separation between groups of related apps.
+
+To remove them, just drag them up and out of the Dock like any other icon.
+
+
+### Reset OS X Dock Icons to Defaults
+Discovered via [David Walsh](https://davidwalsh.name/reset-os-x-dock-icons)
+
+```
+defaults delete com.apple.dock; killall Dock
+```
+
+
+
+
+
 ## Just for fun
 ### Make your Mac talk
 ```
