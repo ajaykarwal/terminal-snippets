@@ -8,7 +8,7 @@ Please feel free to contribute.
 ---
 
 
-1. [Screenshots](#secreenshots)
+1. [Screenshots](#screenshots)
 2. [Finder hacks](#finder-hacks)
 3. [Dock hacks](#dock-hacks)
 4. [Just for fun](#just-for-fun)
