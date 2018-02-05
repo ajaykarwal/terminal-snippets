@@ -8,14 +8,15 @@ Please feel free to contribute.
 ---
 
 
-1. [Screenshots](#screenshots)
-2. [Finder hacks](#finder-hacks)
-3. [Dock hacks](#dock-hacks)
-4. [Just for fun](#just-for-fun)
+- [Screenshots](#screenshots)
+- [Finder hacks](#finder-hacks)
+- [Dock hacks](#dock-hacks)
+- [Misc Settings](#misc-settings)
+- [Just for fun](#just-for-fun)
 
 
 
-
+<br><br>
 ## Screenshots
 ### Change the default destination folder for saving screenshots
 By default screenshots are saved to the desktop which can cause a lot of clutter throught the day. Use this snippet to save to a folder of your choice.
@@ -42,7 +43,7 @@ killall SystemUIServer
 
 
 
-
+<br><br>
 ## Finder hacks
 ### Open a Finder window at current location
 ```
@@ -72,7 +73,7 @@ find . -name '*.DS_Store' -type f -delete
 
 
 
-
+<br><br>
 ## Dock hacks
 ### Add a "space" to the dock. Enter it as many times as you want spaces.
 
@@ -95,7 +96,19 @@ defaults delete com.apple.dock; killall Dock
 
 
 
+<br><br>
+## Misc Settings
+### Edit the Computer Name when the option is disabled in System Preferences
 
+```
+sudo scutil --set ComputerName "My MacBook Pro"
+```
+
+
+
+
+
+<br><br>
 ## Just for fun
 ### Make your Mac talk
 ```
